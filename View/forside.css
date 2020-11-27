@@ -1,0 +1,63 @@
+/*Velkomst til hjemmesiden*/
+/*body{
+   
+}*/
+h1{
+    color: darkcyan;
+    text-align: center;}
+
+
+
+
+    /*Opret bruger*/
+#header1{
+    color: darkcyan;
+}
+
+#form1{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;    
+    height: 700px;
+
+    
+}
+
+input,select{
+    width: 50%;
+    height: 25px;
+    outline: none;
+    border: solid darkcyan 5px;
+}
+
+::placeholder{
+color: darkcyan;
+font-size: 20px;
+}
+
+label{
+    font-size: 150%;
+    color: darkcyan;
+}
+
+button{
+    color: darkcyan;
+}
+
+p{
+    color: rgb(240, 10, 10);
+    
+
+}
+/*Log ind*/
+
+#header2{
+    color: darkcyan;
+}
+
+#form2{
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+    height: 700px
+}

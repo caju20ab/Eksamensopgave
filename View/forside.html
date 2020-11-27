@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Eksamensopgave</title>
+    <link rel="stylesheet" href="forside.css">
+</head>
+
+<body>
+<!--Overskrift på hjemmesiden-->
+      <div class="h1">
+        <h1>Velkommen til DatingApp</h1>
+      </div>
+
+<!--Opret en bruger formlen-->
+<div id = "form1" class="Husk"> 
+        <form>
+         <H2 id="header1">Opret en bruger på DatingApp</H2>
+        
+         <div>
+             <label>Angiv fornavn</label>
+             <input id="fornavn" type="text" placeholder="Skriv dit fornavn her">
+        </div>
+<br>
+        <div>
+             <label>Angiv efternavn</label>
+             <input id="efternavn" name="Efternavn" placeholder="Skriv dit efternavn her">
+        </div>
+<br>
+        <div>
+             <label>Angiv email</label>
+             <input id="email" name="email" placeholder="Skriv din email her">
+             <p id="fail4"></p>
+        </div>
+
+        <div>
+                <label>Angiv hvilket køn du har interesse for</label>     
+                <select name="køn" id="køn">
+                <option value="default">Vælg køn</option>
+                <option value="køn1">Mand</option>
+                <option value="køn2">Kvinde</option>
+                <option value="køn3">Andet</option>
+               </select>
+        </div>
+<br>
+        <div>
+             <label>Angiv køn</label>     
+             <select name="køn">
+             <option value="default">Vælg køn</option>
+             <option value="køn1">Mand</option>
+             <option value="køn2">Kvinde</option>
+             <option value="køn3">Andet</option>
+            </select>
+        </div>
+<br>
+        <div>
+              <label>Angiv adgangskode</label>
+                <input id= "adgangskode" name="adgangskode" placeholder="Skriv din adgangskode her">
+                <p id="forkert"></p>  
+                <p id="fail"></p> 
+                <p id="fail2"></p>
+                <p id="fail3"></p>
+        </div>
+<br>
+        <div>
+            <label>Fødelsdagsdato</label>
+            <input type="date" date="fødselsdagsdato" name="fødselsdagsdato">
+        </div>
+<br>
+        <div>
+                 <button type="submit" name="submit">Registrer</button>
+        </div>
+</div>
+
+</form>
+
+
+
+
+
+
+
+<!--Log ind formlen-->
+<div id="form2">
+        <div>
+                <h2 id="header2">Login her</h2>
+                
+        </div>
+        <div>
+                <label>Angiv email</label>
+   <br>
+                    <input id="email2" name="email2" placeholder="Skriv din email her">
+           </div>
+           <div>
+                <label>Angiv din adgangskode</label>
+  <br>
+                   <input id= "adgangskode2" name="adgangskode2" placeholder="Skriv din adgangskode her">
+          </div>
+          <div>
+                     <button type="submit" name="submit">Login</button>
+        </div>
+</div>
+
+
+
+
+</head>
+<script src="forside.js"></script>
+</body>
+
+
+
+</html>
+
