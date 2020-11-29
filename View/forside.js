@@ -4,25 +4,28 @@ const form = document.querySelector('form')
 const fnameInput = document.querySelector('#fornavn')
 const lnameInput = document.querySelector('#efternavn')
 const emailInput = document.querySelector('#email')
-const genderInterest = document.querySelector ('#køn')
+const genderintInput = document.querySelector ('#interesse')
 const genderInput = document.querySelector ('#køn')
+const passwordInput = document.querySelector ('#adgangskode')
+const birthdayInput = document.querySelector ('#fødselsdag')
+
+const submitButton = document.querySelector ('#submit')
 
 
+//https://www.youtube.com/watch?v=In0nB0ABaUk Se den her video, for at sætte kriterier til submit knappen
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+});
 
+submitButton.addEventListener('click', function(){
+    localStorage.setItem ('fornavn', fnameInput.value)
+    localStorage.setItem ('efternavn', lnameInput.value)
+    localStorage.setItem ('email', emailInput.value)
+    localStorage.setItem ('interesse', genderintInput.value)
+    localStorage.setItem ('køn', genderInput.value)
+    localStorage.setItem ('fødselsdag', birthdayInput.value)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+})
 
 //Kriterier til de oplysninger brugeren laver når han opretter profil
 
@@ -83,5 +86,9 @@ document.getElementById("adgangskode").addEventListener("keyup",function(){
                  }})
     
     
+//Login med den oprettede bruger 
 
+const form2 = document.querySelector('login')
+const emailVerification = document.querySelector('#email2')
+const passwordVerification = document.querySelector ('#adgangskode2')
     

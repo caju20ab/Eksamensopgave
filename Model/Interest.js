@@ -1,8 +1,8 @@
-/*lass Interest {
-    constructor (hobby, job, age){
-    this.hobby = hobby
-    this.job = job;
-    this.age = age
+class Interest{
+    constructor (men, women, other){
+    this.men = men
+    this.women = women
+    this.other = other
 }
 }
-module.exports = Interest;*/
+module.exports = Interest;

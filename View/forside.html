@@ -13,13 +13,13 @@
       </div>
 
 <!--Opret en bruger formlen-->
-<div id = "form1" class="Husk"> 
+<div id = "div1" class="Husk"> 
         <form>
          <H2 id="header1">Opret en bruger på DatingApp</H2>
         
          <div>
              <label>Angiv fornavn</label>
-             <input id="fornavn" type="text" placeholder="Skriv dit fornavn her">
+             <input id="fornavn" type="text" placeholder="Skriv dit fornavn her" required>
         </div>
 <br>
         <div>
@@ -35,7 +35,7 @@
 
         <div>
                 <label>Angiv hvilket køn du har interesse for</label>     
-                <select name="køn" id="køn">
+                <select id="interesse" name="interesse" id="interesse">
                 <option value="default">Vælg køn</option>
                 <option value="køn1">Mand</option>
                 <option value="køn2">Kvinde</option>
@@ -45,12 +45,12 @@
 <br>
         <div>
              <label>Angiv køn</label>     
-             <select name="køn">
+             <select id="køn" name="køn">
              <option value="default">Vælg køn</option>
              <option value="køn1">Mand</option>
              <option value="køn2">Kvinde</option>
              <option value="køn3">Andet</option>
-            </select>
+             </select>
         </div>
 <br>
         <div>
@@ -64,11 +64,11 @@
 <br>
         <div>
             <label>Fødelsdagsdato</label>
-            <input type="date" date="fødselsdagsdato" name="fødselsdagsdato">
+            <input type="date" date="fødselsdagsdato" name="fødselsdagsdato" id="fødselsdag">
         </div>
 <br>
         <div>
-                 <button type="submit" name="submit">Registrer</button>
+                 <button id="submit" type="submit" name="submit">Registrer</button>
         </div>
 </div>
 
@@ -81,7 +81,7 @@
 
 
 <!--Log ind formlen-->
-<div id="form2">
+<div id="form2" class="login">
         <div>
                 <h2 id="header2">Login her</h2>
                 
@@ -97,7 +97,7 @@
                    <input id= "adgangskode2" name="adgangskode2" placeholder="Skriv din adgangskode her">
           </div>
           <div>
-                     <button type="submit" name="submit">Login</button>
+                     <button id="Login"    type="submit" name="submit">Login</button>
         </div>
 </div>
 
