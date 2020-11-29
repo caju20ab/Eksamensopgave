@@ -8,7 +8,6 @@ const genderintInput = document.querySelector ('#interesse')
 const genderInput = document.querySelector ('#køn')
 const passwordInput = document.querySelector ('#adgangskode')
 const birthdayInput = document.querySelector ('#fødselsdag')
-
 const submitButton = document.querySelector ('#submit')
 
 
