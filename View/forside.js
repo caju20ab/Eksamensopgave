@@ -1,13 +1,19 @@
+
 //husk, og glemme bruger
+
+const User = require("../Model/User");
+
+
+
 const rememberDiv = document.querySelector('.husk');
 const form = document.querySelector('form')
-const fnameInput = document.querySelector('#fornavn')
-const lnameInput = document.querySelector('#efternavn')
-const emailInput = document.querySelector('#email')
-const genderintInput = document.querySelector ('#interesse')
-const genderInput = document.querySelector ('#køn')
-const passwordInput = document.querySelector ('#adgangskode')
-const birthdayInput = document.querySelector ('#fødselsdag')
+const firstName = document.querySelector('#fornavn')
+const lastName = document.querySelector('#efternavn')
+const email = document.querySelector('#email')
+const prefGender = document.querySelector ('#interesse')
+const gender = document.querySelector ('#køn')
+const password = document.querySelector ('#adgangskode')
+const birthday = document.querySelector ('#fødselsdag')
 const submitButton = document.querySelector ('#submit')
 
 
@@ -16,15 +22,23 @@ form.addEventListener('submit', function(e){
     e.preventDefault();
 });
 
+
 submitButton.addEventListener('click', function(){
-    localStorage.setItem ('fornavn', fnameInput.value)
-    localStorage.setItem ('efternavn', lnameInput.value)
-    localStorage.setItem ('email', emailInput.value)
-    localStorage.setItem ('interesse', genderintInput.value)
-    localStorage.setItem ('køn', genderInput.value)
-    localStorage.setItem ('fødselsdag', birthdayInput.value)
+    localStorage.setItem('fornavn', firstName.value)
+    localStorage.setItem ('efternavn', lastName.value)
+    localStorage.setItem ('email', email.value)
+    localStorage.setItem ('interesse', prefGender.value)
+    localStorage.setItem ('køn', gender.value)
+    localStorage.setItem('adgangskode', password.value)
+    localStorage.setItem ('fødselsdag', birthday.value)
 
 })
+
+let user = new User
+
+let userArray = []
+
+
 
 //Kriterier til de oplysninger brugeren laver når han opretter profil
 
@@ -90,4 +104,9 @@ document.getElementById("adgangskode").addEventListener("keyup",function(){
 const form2 = document.querySelector('login')
 const emailVerification = document.querySelector('#email2')
 const passwordVerification = document.querySelector ('#adgangskode2')
+
+
+let
+
+XMLHttpRequest
     

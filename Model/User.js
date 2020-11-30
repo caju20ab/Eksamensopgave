@@ -1,11 +1,12 @@
 class User {
-    constructor (fname, lname, age, password, image, interest){
-        this.fname =  fname
-        this.lname = lname
-        this.age = age
+    constructor (firstName, lastName, email, prefGender, gender, password, birthday){
+        this.firstName =  firstName
+        this.lastName = lastName
+        this.email = email
+        this.prefGender = prefGender
+        this.gender = gender
         this.password = password
-        this.image = image
-        this.interest = interest
+        this.birthday = birthday       
     }
 }
 module.exports = User

@@ -1,4 +1,24 @@
-const userRoutes = (app, fs) => {
+var xmlhttprequest = require("xmlhttprequest").XMLHttpRequest;
+
+var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+         // Typical action to be performed when the document is ready:
+         document.getElementById("#Login").innerHTML = xhttp.responseText;
+      }
+  };
+  xhttp.open("GET", "forside.html", true);
+  xhttp.send();
+/*
+
+
+
+
+
+
+
+
+/*const userRoutes = (app, fs) => {
     //Variabel
     const dataPath = ('./data/users.json')
 
@@ -61,4 +81,4 @@ const userRoutes = (app, fs) => {
     }, true);
     });
     };
-module.exports = userRoutes
+module.exports = userRoutes*/
