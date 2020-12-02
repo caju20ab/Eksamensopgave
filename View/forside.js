@@ -1,29 +1,10 @@
-
-//husk, og glemme bruger
-
-const User = require("../Model/User");
-
+//Kriterier til de oplysninger brugeren laver når han opretter profil
+//const User = require ("../Model/User");
+//const bodyParser = require("body-parser");
 
 
-const rememberDiv = document.querySelector('.husk');
-const form = document.querySelector('form')
-const firstName = document.querySelector('#fornavn')
-const lastName = document.querySelector('#efternavn')
-const email = document.querySelector('#email')
-const prefGender = document.querySelector ('#interesse')
-const gender = document.querySelector ('#køn')
-const password = document.querySelector ('#adgangskode')
-const birthday = document.querySelector ('#fødselsdag')
-const submitButton = document.querySelector ('#submit')
 
-
-//https://www.youtube.com/watch?v=In0nB0ABaUk Se den her video, for at sætte kriterier til submit knappen
-form.addEventListener('submit', function(e){
-    e.preventDefault();
-});
-
-
-submitButton.addEventListener('click', function(){
+/*submitButton.addEventListener('click', function(){
     localStorage.setItem('fornavn', firstName.value)
     localStorage.setItem ('efternavn', lastName.value)
     localStorage.setItem ('email', email.value)
@@ -33,15 +14,28 @@ submitButton.addEventListener('click', function(){
     localStorage.setItem ('fødselsdag', birthday.value)
 
 })
+/*
+var value = JSON.stringify[User.firstName, User.lastName, User.email, User.prefGender, User.gender, User.password, User.birthday]
+localStorage.setItem('newUser', value)
+var createdUser = JSON.parse(localStorage.getItem('newUser'))
+var addUser = JSON.stringify(createdUser)
+localStorage.setItem('newUser_' + fname, JSON.stringify(user))*/
 
-let user = new User
+/*var value = JSON.stringify([user.name, user.lastName, user.Password, user.Birthday, user.Gender, user.Mail]);
+localStorage.setItem("newUser", value);
+var createdUser = JSON.parse(localStorage.getItem("newUser"));
+//createdUser.push(new User (user.name, user.lastName, user.Birthday, user.Gender, user.Mail));
+var addUser = JSON.stringify(createdUser);
+localStorage.setItem("newUser_"+fname, JSON.stringify(user));*/
 
-let userArray = []
+/*const rememberDiv = document.querySelector('.husk');
+const form = document.querySelector('form')
+const submitButton = document.querySelector ('#submit')
 
-
-
-//Kriterier til de oplysninger brugeren laver når han opretter profil
-
+//https://www.youtube.com/watch?v=In0nB0ABaUk Se den her video, for at sætte kriterier til submit knappen
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+});*/
 
 
 //Adgangskode kriterierne 
@@ -88,7 +82,7 @@ document.getElementById("adgangskode").addEventListener("keyup",function(){
 
     
                  //Email kriterieriet            
-    document.getElementById("email").addEventListener("keyup",function(){
+    /*document.getElementById("email").addEventListener("keyup",function(){
     console.log(email.value);
     if (email.value.search (/[@]/)==-1){
             document. getElementById("fail4").innerHTML = "Emailadressen skal indeholde @" 
@@ -97,7 +91,7 @@ document.getElementById("adgangskode").addEventListener("keyup",function(){
             document. getElementById("fail4").innerHTML = "" 
                                                             
                  }})
-    
+    */
     
 //Login med den oprettede bruger 
 
@@ -106,7 +100,3 @@ const emailVerification = document.querySelector('#email2')
 const passwordVerification = document.querySelector ('#adgangskode2')
 
 
-let
-
-XMLHttpRequest
-    

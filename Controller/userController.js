@@ -1,6 +1,6 @@
-/*const users = require ('../HardUser');
-const User = require ('../Classes/user');
-const service = require ('../service')
+//const users = require ('../HardUser');
+/*const User = require ('../model/user');
+//const service = require ('../service')
 
 function userController (req, res){
     res.json (users)

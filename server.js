@@ -6,28 +6,36 @@ const bodyParser = require ('body-parser');
 const app = express()
 const path = require ('path')
 
+//const userController = require('./Controller/userController');
+
+
+
 //Indhenter alle oplysningerne i VIEW mappen, eksempelvis CSS dokumenterne og JS-logikken
+app.use(express.static('model'))
 app.use(express.static('view'))
+
 app.get('/', function (req, res) {
-    res.sendfile(path.join(__dirname + '/view/forside.html'))
+    res.sendfile(path.join(__dirname + '/view/html/forside.html'))
 })
+//app.post('/user', userController.addNewUser);
 
 
 
-/*const fs = require('fs');
-const { response } = require('express');
-const { get } = require('http');*/
 
 
-//Konfigurere express udtrykket "app", med nogle body-parser settings. Og dertil også håndtering af JSON data
 
-/*app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));*/
 
-//Dette er filen vi håndtere de forskellige routes fra
 
-/*const routes = require('./Routes/routes')(app, fs);
-*/
+
+
+
+
+app.get ('/login', function (req, res){
+    res.sendFile(path.join(__dirname + '/view/html/login.html'))
+}
+)
+
+
 const server = app.listen(8080, () => {
     console.log('listening on port %s...', server.address().port);
   });
