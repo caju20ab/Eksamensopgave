@@ -39,9 +39,9 @@ form.addEventListener('submit', function(e){
 
 
 //Adgangskode kriterierne 
-document.getElementById("adgangskode").addEventListener("keyup",function(){
-    console.log(adgangskode.value);
-    if (adgangskode.value.length <=7){
+document.getElementById("password").addEventListener("keyup",function(){
+    console.log(password.value);
+    if (password.value.length <=7){
         document. getElementById("forkert").innerHTML = "Adganskoden skal være min. 8 karakterer" 
         }
         else {
@@ -49,9 +49,9 @@ document.getElementById("adgangskode").addEventListener("keyup",function(){
         
         }})
     
-        document.getElementById("adgangskode").addEventListener("keyup",function(){
-        console.log(adgangskode.value);
-        if (adgangskode.value.search (/[0-9]/)==-1){
+        document.getElementById("password").addEventListener("keyup",function(){
+        console.log(password.value);
+        if (password.value.search (/[0-9]/)==-1){
             document. getElementById("fail").innerHTML = "Adganskoden skal indeholde tal" 
             }
             else {
@@ -59,9 +59,9 @@ document.getElementById("adgangskode").addEventListener("keyup",function(){
                 
                 }})
     
-    document.getElementById("adgangskode").addEventListener("keyup",function(){
-    console.log(adgangskode.value);
-    if (adgangskode.value.search (/[a-z]/)==-1){
+    document.getElementById("password").addEventListener("keyup",function(){
+    console.log(password.value);
+    if (password.value.search (/[a-z]/)==-1){
             document. getElementById("fail2").innerHTML = "Adganskoden skal indeholde et lille bogstav" 
              }
             else {
@@ -69,9 +69,9 @@ document.getElementById("adgangskode").addEventListener("keyup",function(){
                             
                 }})
     
-    document.getElementById("adgangskode").addEventListener("keyup",function(){
-    console.log(adgangskode.value);
-    if (adgangskode.value.search (/[A-Z]/)==-1){
+    document.getElementById("password").addEventListener("keyup",function(){
+    console.log(password.value);
+    if (password.value.search (/[A-Z]/)==-1){
             document. getElementById("fail3").innerHTML = "Adganskoden skal indeholde et lille bogstav" 
              }
             else {
@@ -82,7 +82,7 @@ document.getElementById("adgangskode").addEventListener("keyup",function(){
 
     
                  //Email kriterieriet            
-    /*document.getElementById("email").addEventListener("keyup",function(){
+    document.getElementById("email").addEventListener("keyup",function(){
     console.log(email.value);
     if (email.value.search (/[@]/)==-1){
             document. getElementById("fail4").innerHTML = "Emailadressen skal indeholde @" 
@@ -91,12 +91,12 @@ document.getElementById("adgangskode").addEventListener("keyup",function(){
             document. getElementById("fail4").innerHTML = "" 
                                                             
                  }})
-    */
+    
     
 //Login med den oprettede bruger 
 
-const form2 = document.querySelector('login')
-const emailVerification = document.querySelector('#email2')
-const passwordVerification = document.querySelector ('#adgangskode2')
+//const form2 = document.querySelector('login')
+//const emailVerification = document.querySelector('#email2')
+//const passwordVerification = document.querySelector ('#adgangskode2')
 
 

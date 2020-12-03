@@ -6,9 +6,10 @@ const bodyParser = require ('body-parser');
 const app = express()
 const path = require ('path')
 
-//const userController = require('./Controller/userController');
 
+const userController = require('./Controller/userController');
 
+app.get('/', userController.userController)
 
 //Indhenter alle oplysningerne i VIEW mappen, eksempelvis CSS dokumenterne og JS-logikken
 app.use(express.static('model'))

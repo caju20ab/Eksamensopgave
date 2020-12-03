@@ -13,18 +13,18 @@
       </div>
 
 <!--Opret en bruger formlen-->
+<form id="form">
 <div id = "div1" class="Husk"> 
-        <form>
          <H2 id="header1">Opret en bruger på DatingApp</H2>
         
          <div>
              <label>Angiv fornavn</label>
-             <input id="fornavn" type="text" placeholder="Skriv dit fornavn her" required>
+             <input id="firstName" type="text" placeholder="Skriv dit fornavn her" required>
         </div>
 <br>
         <div>
              <label>Angiv efternavn</label>
-             <input id="efternavn" name="Efternavn" placeholder="Skriv dit efternavn her">
+             <input id="lastName" name="Efternavn" placeholder="Skriv dit efternavn her">
         </div>
 <br>
         <div>
@@ -35,7 +35,7 @@
 
         <div>
                 <label>Angiv hvilket køn du har interesse for</label>     
-                <select id="interesse" name="interesse" id="interesse">
+                <select id="prefGender" name="interesse" id="interesse">
                 <option value="default">Vælg køn</option>
                 <option value="Mand">Mand</option>
                 <option value="Kvinde">Kvinde</option>
@@ -45,7 +45,7 @@
 <br>
         <div>
              <label>Angiv køn</label>     
-             <select id="køn" name="køn">
+             <select id="gender" name="køn">
              <option value="default">Vælg køn</option>
              <option value="Mand">Mand</option>
              <option value="Kvinde">Kvinde</option>
@@ -55,7 +55,7 @@
 <br>
         <div>
               <label>Angiv adgangskode</label>
-                <input id= "adgangskode" name="adgangskode" placeholder="Skriv din adgangskode her">
+                <input id= "password" name="adgangskode" placeholder="Skriv din adgangskode her">
                 <p id="forkert"></p>  
                 <p id="fail"></p> 
                 <p id="fail2"></p>
@@ -64,7 +64,7 @@
 <br>
         <div>
             <label>Fødelsdagsdato</label>
-            <input type="date" date="fødselsdagsdato" name="fødselsdagsdato" id="fødselsdag">
+            <input type="date" date="fødselsdagsdato" name="fødselsdagsdato" id="birthday">
         </div>
 <br>
         <div>
@@ -76,7 +76,8 @@
 
 </head>
 <script src="forside.js"></script>
-<script src="user.js"></script>
+<script src="/Controller/userController.js"></script>
+
 
 
 </body>

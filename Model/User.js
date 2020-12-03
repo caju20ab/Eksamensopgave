@@ -1,6 +1,6 @@
+//Vi forsøgte at få brugt den nedenstående class som skabelon for det der skal gemme i localstorage
+
 //const users = require ('../de users som bliver oprettet) 
- 
- 
  /*class User {
     constructor (firstName, lastName, email, prefGender, gender, password, birthday){
         this.firstName =  firstName
@@ -11,48 +11,40 @@
         this.password = password
         this.birthday = birthday       
     }
-}
-
-const user = new User*/
-
-
-//var userArray = []
-
-const form = document.getElementById('div1')
-const submitButton = document.getElementById ('submit')
-const rememberDiv = document.getElementById('husk')
-
-
-
+}*/
+/*const form = document.getElementById ('form')
+const submitButton = document.getElementById ('submit').addEventListener('click', saveUser)
 form.addEventListener('submit', function(e){
     e.preventDefault();
 })
 
-const firstName = document.getElementById ('fornavn').value
-const lastName = document.getElementById('efternavn').value
+function saveUser(){
+const firstName = document.getElementById ('firstName').value
+const lastName = document.getElementById('lastName').value
 const email = document.getElementById('email').value
-const prefGender = document.getElementById ('interesse').value
-const gender = document.getElementById ('køn').value
-const password = document.getElementById ('adgangskode').value
-const birthday = document.getElementById ('fødselsdag').value
-
+const prefGender = document.getElementById ('prefGender').value
+const gender = document.getElementById ('gender').value
+const password = document.getElementById ('password').value
+const birthday = document.getElementById ('birthday').value
 
 let user = {
-    fornavn : firstName,
-    efternavn : lastName,
+    firstName : firstName,
+    lastName : lastName,
     email : email,
-    interesse : prefGender,
-    køn : gender,
-    adgangskode : password,
-    fødselsdag : birthday
+    prefGender : prefGender,
+    gender : gender,
+    password : password,
+    birthday : birthday
+    
 }
 
+
 var value = JSON.stringify([user.firstName, user.lastName, user.email, user.prefGender, user.gender, user.password, user.birthday]);
-localStorage.setItem("newuser1", value);
-var createdUser = JSON.parse(localStorage.getItem("newuser1"));
-//createdUser.push(new User (user.name, user.lastName, user.Birthday, user.Gender, user.Mail));
+localStorage.setItem("user", value);
+var createdUser = JSON.parse(localStorage.getItem("user"));
 var addUser = JSON.stringify(createdUser);
-//localStorage.setItem("newUser" + firstname, JSON.stringify(user))
+localStorage.setItem("user_" + firstName, JSON.stringify(user))
+}
 
 
 /*submitButton.addEventListener('click', function(){
